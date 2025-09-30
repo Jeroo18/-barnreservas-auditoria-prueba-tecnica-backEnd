@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+	  <TargetFramework>net6.0</TargetFramework>
+	  <Nullable>enable</Nullable>
+	  <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.31.0" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.10">
+		<PrivateAssets>all</PrivateAssets>
+		<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	</PackageReference>
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.10">
+		<PrivateAssets>all</PrivateAssets>
+		<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	</PackageReference>
+	<PackageReference Include="MediatR" Version="11.0.0" />
+	<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.10" />
+    <PackageReference Include="log4net" Version="2.0.15" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.0" />
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.2.1" />
+    <PackageReference Include="Scrutor" Version="4.2.0" />
+    <PackageReference Include="Scrutor.AspNetCore" Version="3.3.0" />
+	<PackageReference Include="Serilog.AspNetCore" Version="6.0.1" />
+	<PackageReference Include="Serilog" Version="2.12.0" />
+	<PackageReference Include="Serilog.Extensions.Logging" Version="3.1.0" />
+	<PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+	<PackageReference Include="Serilog.Settings.Configuration" Version="3.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.4.0" />
+	<PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+	<PackageReference Include="Pomelo.EntityFrameworkCore.Lolita.SqlServer" Version="6.0.5" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.31.0" />
+	<PackageReference Include="IdentityModel.AspNetCore.OAuth2Introspection" Version="6.1.0" />
+	<PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
+	<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Banreservas.ReservationHapiness.Application\Banreservas.ReservationHapiness.Application.csproj" />
+    <ProjectReference Include="..\Banreservas.ReservationHapiness.Common\Banreservas.ReservationHapiness.Common.csproj" />
+    <ProjectReference Include="..\Banreservas.ReservationHapiness.Domain\Banreservas.ReservationHapiness.Domain.csproj" />
+    <ProjectReference Include="..\Banreservas.ReservationHapiness.Identity\Banreservas.ReservationHapiness.Identity.csproj" />
+    <ProjectReference Include="..\Banreservas.ReservationHapiness.Infrastructure\Banreservas.ReservationHapiness.Infrastructure.csproj" />
+    <ProjectReference Include="..\Banreservas.ReservationHapiness.Persistence\Banreservas.ReservationHapiness.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>

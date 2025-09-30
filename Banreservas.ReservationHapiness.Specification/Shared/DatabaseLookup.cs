@@ -1,0 +1,35 @@
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using MAP.OSP.Application.Interfaces;
+
+//namespace MAP.OSP.Specification.Shared
+//{
+//    public class DatabaseLookup
+//    {
+//        private readonly IMAPOSPDbContext _database;
+
+//        public DatabaseLookup(IMAPOSPDbContext database)
+//        {
+//            _database = database;
+//        }
+
+//        public int GetCustomerId(string name)
+//        {
+//            return _database.Customers
+//                .Single(p => p.Name == name).Id;
+//        }
+
+//        public int GetEmployeeId(string name)
+//        {
+//            return _database.Employees
+//                .Single(p => p.Name == name).Id;
+//        }
+
+//        public int GetProductIdByName(string name)
+//        {
+//            return _database.Products
+//                .Single(p => p.Name == name).Id;
+//        }
+//    }
+//}
