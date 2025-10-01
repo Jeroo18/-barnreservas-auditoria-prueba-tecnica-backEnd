@@ -8,7 +8,15 @@
       "Bash(dotnet ef:*)",
       "Bash(dotnet build:*)",
       "Bash(sqlcmd:*)",
-      "Bash(taskkill:*)"
+      "Bash(taskkill:*)",
+      "Bash(Get-Process -Name \"Banreservas.ReservationHapiness.API\" -ErrorAction SilentlyContinue)",
+      "Bash(Stop-Process -Force)",
+      "Bash(Get-ChildItem -Recurse -File)",
+      "Bash(Select-Object -First 50 FullName)",
+      "Bash(rm:*)",
+      "Bash(dotnet sln:*)",
+      "Bash(dotnet test:*)",
+      "Bash(git checkout:*)"
     ],
     "deny": [],
     "ask": []

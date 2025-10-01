@@ -21,7 +21,7 @@ namespace Banreservas.ReservationHapiness.Persistence
         #endregion
 
         #region ===[ Constructors ]=================================================================
-       
+
         public ReservationHappinessDbContext(DbContextOptions<ReservationHappinessDbContext> options)
         : base(options)
         {
@@ -63,11 +63,11 @@ namespace Banreservas.ReservationHapiness.Persistence
                 {
                     case EntityState.Added:
                         entry.Entity.CreatedDate = DateTime.Now;
-                        entry.Entity.CreatedBy = _loggedInUserService.UserId;
+                        entry.Entity.CreatedBy = _loggedInUserService?.UserId ?? "System";
                         break;
                     case EntityState.Modified:
                         entry.Entity.LastModifiedDate = DateTime.Now;
-                        entry.Entity.LastModifiedBy = _loggedInUserService.UserId;
+                        entry.Entity.LastModifiedBy = _loggedInUserService?.UserId ?? "System";
                         break;
                 }
             }
